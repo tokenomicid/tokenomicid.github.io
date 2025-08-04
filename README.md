@@ -1,2 +1,2 @@
-# tokonomicid.github.io
+# tokenomicid.github.io
 Menempuh Masa Depan yang Cerah
