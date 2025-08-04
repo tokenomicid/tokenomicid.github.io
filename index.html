@@ -45,9 +45,20 @@
       <h4>Ketentuan</h4>
       <ol>
         <li>Bagi yang sudah mendaftar wajib melakukan deposit sebesar <strong>100</strong> pertama kali untuk melakukan Input ke Sumber Daya Pump Koin atau Dump Koin yang anda bisa Akses terlebih dahulu di bawah ini.:</li>
-        <p><img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=0xf124035E4Ec06d62aB364f78CD99324825008eF5" class="qr-code" alt="QR Wallet"></p>
-        <p><strong>Alamat:</strong> 0xf124035E4Ec06d62aB364f78CD99324825008eF5<br>
-           <strong>Jaringan:</strong> BEP20 (BSC)</p>
+        <p>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=0xf124035E4Ec06d62aB364f78CD99324825008eF5" class="qr-code" alt="QR Wallet">
+</p>
+
+<p>
+  <strong>Alamat:</strong>
+  <span id="walletAddress" style="cursor:pointer; color:blue; text-decoration:underline;">
+    0xf124035E4Ec06d62aB364f78CD99324825008eF5
+  </span>
+  <small class="text-muted">(klik untuk menyalin)</small>
+  <br>
+  <strong>Jaringan:</strong> BEP20 (BSC)
+</p>
+        
         <li>Dana ini tujuannya sebagai jaminan untuk anda Profit di masa depan ketika Group atau Team Leader sudah memberikan Akses Koin/Token mana yang akan di Pump atau di Dump. info ini akan di kirim otomatis di group Telegram atau Ke Email anda secara instan berkala tentang Token dan Koinnya.</li>
         <li>Buku atau bentuk e-book kami akan kirimkan ke pada anda "saat ini masih tahap revisi akibat pemindahan alokasi Network Pump, dulunya kami fokus di Binance Smart Chain akibat banyak masalah di Network tersebut maka kami pindahkan ke Solana Network, buku ini anda pelajari dengan lengkap, "paling lambat 28 Agustus 2026 seluruh buku panduan atau teknikal Tokenomic sudah bisa di terima yang baru, untuk saat ini kami akan mengirimkan Book Of Tokenomic 2022 BSC sebagai panduan sementara yang bisa anda pelajari" kebijakan ini akan anda terima ketika anda sudah melakukan Deposit di atas tadi jika belum anda masih member biasa tidak memiliki akses apapun walau sudah mendaftar sebagai Anggota Member sebesar Rp. 500.000 melalui General Manager Country yang mengajak anda, atau Team Leadership lainnya.</li>
         <li>Setelah mendaftar dan memberikan dana pump/dump 100 USDT ke alamat di atas, tidak ada syarat lainnya kecuali anda sudah mencapai 12 bulan lamanya, yaitu sebesar Rp. 2.000.000,- untuk Administrasi Tambahan Pajak Tahunan untuk membayar VPS akses Blockchain yang mengurus secara Teknikal Tokenomic berdasarkan Data Transaksi Tokenomic itu sendiri yang biayanya sebesar 6000 USD/Tahun. Karena data Blockchain itu banyak dan menumpuk, maka kami menggunakan CPU berdaya tinggi untuk mencari Liquidity yang baik untuk di masuki sebagai Pump atau Dump koin.</li>
@@ -81,6 +92,12 @@
 </div>
 
 <script>
+  const walletAddress = document.getElementById('walletAddress');
+  walletAddress.addEventListener('click', () => {
+    navigator.clipboard.writeText(walletAddress.innerText)
+      .then(() => alert("Alamat wallet berhasil disalin!"))
+      .catch(() => alert("Gagal menyalin alamat."));
+  });
   function _0x4f1e(){const _0xe47252=['every','submitBtn','58164wVGRLb','1058550APgWgo','submit','change','88iiZbeS','forEach','5529032zwYbMS','45JcKbJR','5863084Oenmni','34730070LCJByg','7aovEsV','.syarat-check','Data\x20anda\x20sudah\x20diproses.\x20Mohon\x20tunggu\x20verifikasi\x20dari\x20Admin\x20atau\x20Team\x20Leadership.','498765PAouCP','getElementById','addEventListener','12240495CFHWNP','querySelectorAll'];_0x4f1e=function(){return _0xe47252;};return _0x4f1e();}const _0x397da0=_0x3521;(function(_0x586aa8,_0x24be31){const _0x3c85bf=_0x3521,_0x4f2d68=_0x586aa8();while(!![]){try{const _0x496998=parseInt(_0x3c85bf(0x78))/0x1+parseInt(_0x3c85bf(0x6f))/0x2*(-parseInt(_0x3c85bf(0x6b))/0x3)+parseInt(_0x3c85bf(0x73))/0x4+-parseInt(_0x3c85bf(0x72))/0x5*(parseInt(_0x3c85bf(0x6c))/0x6)+-parseInt(_0x3c85bf(0x75))/0x7*(parseInt(_0x3c85bf(0x71))/0x8)+-parseInt(_0x3c85bf(0x7b))/0x9+parseInt(_0x3c85bf(0x74))/0xa;if(_0x496998===_0x24be31)break;else _0x4f2d68['push'](_0x4f2d68['shift']());}catch(_0x3ec3f6){_0x4f2d68['push'](_0x4f2d68['shift']());}}}(_0x4f1e,0xe6d36));function _0x3521(_0xac5d66,_0x427b00){const _0x4f1e60=_0x4f1e();return _0x3521=function(_0x352153,_0x26bede){_0x352153=_0x352153-0x68;let _0x120217=_0x4f1e60[_0x352153];return _0x120217;},_0x3521(_0xac5d66,_0x427b00);}const checkboxes=document[_0x397da0(0x68)](_0x397da0(0x76)),submitBtn=document[_0x397da0(0x79)](_0x397da0(0x6a)),form=document[_0x397da0(0x79)]('tokenomicForm');function checkCeklis(){const _0x13f730=_0x397da0,_0x2379b6=[...checkboxes][_0x13f730(0x69)](_0x2e068f=>_0x2e068f['checked']);submitBtn['disabled']=!_0x2379b6;}checkboxes[_0x397da0(0x70)](_0x45a953=>_0x45a953[_0x397da0(0x7a)](_0x397da0(0x6e),checkCeklis)),form[_0x397da0(0x7a)](_0x397da0(0x6d),function(_0x201e92){const _0x5cfb25=_0x397da0;_0x201e92['preventDefault'](),alert(_0x5cfb25(0x77)),form['reset'](),checkCeklis();});
 </script>
 </body>
