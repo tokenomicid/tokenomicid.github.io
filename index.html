@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Situs Dalam Pemeliharaan</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .countdown {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #dc3545;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔧 Situs Sedang Dalam Pemeliharaan</h1>
+  <p>Kami sedang melakukan pembaruan sistem. Situs akan aktif kembali pada:</p>
+  <div class="countdown" id="countdown">--:--:--</div>
+  <p>Silakan kembali setelah jam 07:00 WIB.</p>
+
+  <script>
+    function getNext7AM() {
+      const now = new Date();
+
+      const target = new Date();
+      target.setHours(7, 0, 0, 0); // Set jam 7 pagi hari ini
+
+      if (now >= target) {
+        // Jika sekarang sudah lewat jam 7, set ke besok pagi
+        target.setDate(target.getDate() + 1);
+      }
+
+      return target;
+    }
+
+    const countdownEl = document.getElementById('countdown');
+    const targetTime = getNext7AM();
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = targetTime - now;
+
+      if (diff <= 0) {
+        countdownEl.innerHTML = "00:00:00";
+        location.reload(); // Refresh saat jam 7 tiba
+        return;
+      }
+
+      const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, '0');
+      const minutes = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+      const seconds = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
+
+      countdownEl.innerHTML = `${hours}:${minutes}:${seconds}`;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+
+</body>
+</html>
+
