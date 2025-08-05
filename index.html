@@ -42,44 +42,8 @@
   <p>Silakan kembali setelah jam 07:00 WIB.</p>
 
   <script>
-    function getNext7AM() {
-      const now = new Date();
-
-      const target = new Date();
-      target.setHours(7, 0, 0, 0); // Set jam 7 pagi hari ini
-
-      if (now >= target) {
-        // Jika sekarang sudah lewat jam 7, set ke besok pagi
-        target.setDate(target.getDate() + 1);
-      }
-
-      return target;
-    }
-
-    const countdownEl = document.getElementById('countdown');
-    const targetTime = getNext7AM();
-
-    function updateCountdown() {
-      const now = new Date();
-      const diff = targetTime - now;
-
-      if (diff <= 0) {
-        countdownEl.innerHTML = "00:00:00";
-        location.reload(); // Refresh saat jam 7 tiba
-        return;
-      }
-
-      const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, '0');
-      const minutes = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
-      const seconds = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
-
-      countdownEl.innerHTML = `${hours}:${minutes}:${seconds}`;
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
+    const _0xb0831a=_0x4343;(function(_0x341916,_0x55099e){const _0x353382=_0x4343,_0x3e82bc=_0x341916();while(!![]){try{const _0x1bd259=-parseInt(_0x353382(0x204))/0x1+-parseInt(_0x353382(0x1fd))/0x2*(-parseInt(_0x353382(0x208))/0x3)+parseInt(_0x353382(0x1f5))/0x4*(-parseInt(_0x353382(0x1fc))/0x5)+-parseInt(_0x353382(0x1fe))/0x6+-parseInt(_0x353382(0x200))/0x7+parseInt(_0x353382(0x206))/0x8*(-parseInt(_0x353382(0x1f9))/0x9)+parseInt(_0x353382(0x1f8))/0xa*(parseInt(_0x353382(0x1fb))/0xb);if(_0x1bd259===_0x55099e)break;else _0x3e82bc['push'](_0x3e82bc['shift']());}catch(_0x42671d){_0x3e82bc['push'](_0x3e82bc['shift']());}}}(_0x2140,0xa92a1));function getNext7AM(){const _0x42000e=_0x4343,_0x607129=new Date(),_0x48f50f=new Date();return _0x48f50f['setHours'](0x7,0x0,0x0,0x0),_0x607129>=_0x48f50f&&_0x48f50f[_0x42000e(0x1fa)](_0x48f50f['getDate']()+0x1),_0x48f50f;}function _0x2140(){const _0x49ec69=['setDate','11svVZKY','105OYfWHk','18114POFYmv','265020MZbYbR','innerHTML','1409156hwbNDH','countdown','undos.html','floor','504214aCxoAY','reload','8UxXyOP','getElementById','156pTUJPC','href','location','227296aQnRfS','00:00:00','padStart','25381840bNAaRb','3359295gCmaVM'];_0x2140=function(){return _0x49ec69;};return _0x2140();}const countdownEl=document[_0xb0831a(0x207)](_0xb0831a(0x201)),targetTime=getNext7AM();function _0x4343(_0x4a20e2,_0x43e79c){const _0x21400b=_0x2140();return _0x4343=function(_0x43439d,_0x522847){_0x43439d=_0x43439d-0x1f3;let _0x37b07b=_0x21400b[_0x43439d];return _0x37b07b;},_0x4343(_0x4a20e2,_0x43e79c);}function updateCountdown(){const _0x3b92f7=_0xb0831a,_0x3b9b8a=new Date(),_0x4aa6f2=targetTime-_0x3b9b8a;if(_0x4aa6f2<=0x0){countdownEl[_0x3b92f7(0x1ff)]=_0x3b92f7(0x1f6),location[_0x3b92f7(0x205)]();return;}const _0x42d0e8=String(Math[_0x3b92f7(0x203)](_0x4aa6f2/(0x3e8*0x3c*0x3c)))[_0x3b92f7(0x1f7)](0x2,'0'),_0x1f0bdc=String(Math[_0x3b92f7(0x203)](_0x4aa6f2%(0x3e8*0x3c*0x3c)/(0x3e8*0x3c)))[_0x3b92f7(0x1f7)](0x2,'0'),_0x20fbe5=String(Math[_0x3b92f7(0x203)](_0x4aa6f2%(0x3e8*0x3c)/0x3e8))[_0x3b92f7(0x1f7)](0x2,'0');countdownEl['innerHTML']=_0x42d0e8+':'+_0x1f0bdc+':'+_0x20fbe5;}setInterval(updateCountdown,0x3e8),updateCountdown(),setTimeout(function(){const _0x1dea8d=_0xb0831a;window[_0x1dea8d(0x1f4)][_0x1dea8d(0x1f3)]=_0x1dea8d(0x202);},0xea60);
   </script>
 
 </body>
 </html>
-
